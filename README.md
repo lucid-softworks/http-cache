@@ -5,7 +5,10 @@ Clone-safe in-memory response caching middleware.
 ```ts
 import { httpCache, MemoryHttpCache } from "@lucid-softworks/http-cache";
 
-app.use(httpCache({ cache: new MemoryHttpCache(), ttl: 30_000 }));
+const middleware = httpCache({
+  cache: new MemoryHttpCache(),
+  ttl: 30_000,
+});
 ```
 
 Only successful GET responses without `no-store` are cached. Every lookup
