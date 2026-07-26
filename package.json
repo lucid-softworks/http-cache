@@ -1,6 +1,6 @@
 {
   "name": "@lucid-softworks/http-cache",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Clone-safe in-memory HTTP response caching middleware.",
   "keywords": [
     "cache",
